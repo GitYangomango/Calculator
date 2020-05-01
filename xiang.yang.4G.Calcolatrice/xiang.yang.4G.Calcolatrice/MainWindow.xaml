@@ -1,0 +1,170 @@
+﻿<Window x:Class="xiang.yang._4G.Calcolatrice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xiang.yang._4G.Calcolatrice"
+        mc:Ignorable="d"
+        Title="Calcolatrice di Yang Xiang 4°G" Height="450" Width="350" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFDADADA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--Tastiera-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="5" Grid.Column="1" BorderThickness="0"
+                    x:Name="btn0" 
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="0"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="4" Grid.Column="0" BorderThickness="0"
+                    x:Name="btn1" 
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="1"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="4" Grid.Column="1" BorderThickness="0"
+                    x:Name="btn2" 
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="2"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="4" Grid.Column="2" BorderThickness="0"
+                    x:Name="btn3" 
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="3"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="3" Grid.Column="0" BorderThickness="0"
+                    x:Name="btn4" 
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="4"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="3" Grid.Column="1" BorderThickness="0"
+                    x:Name="btn5"  
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="5"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="3" Grid.Column="2" BorderThickness="0"
+                    x:Name="btn6"  
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="6"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="2" Grid.Column="0" BorderThickness="0"
+                    x:Name="btn7" 
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="7"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="2" Grid.Column="1" BorderThickness="0"
+                    x:Name="btn8" 
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="8"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="2" Grid.Column="2" BorderThickness="0"
+                    x:Name="btn9"  
+                    Margin="1.5" 
+                    Background="White" 
+                    Content="9"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="NumeroClick">
+            </Button>
+            <Button Grid.Row="4" Grid.Column="3" BorderThickness="0"
+                    x:Name="btnplus"  
+                    Margin="1.5" 
+                    Background="#FFF1F1F1" 
+                    Content="+"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="OperatoreClick">
+            </Button>
+            <Button Grid.Row="5" Grid.Column="3" BorderThickness="0"
+                    x:Name="btneq"  
+                    Margin="1.5" 
+                    Background="#FFF1F1F1" 
+                    Content="="
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="OperatoreClick">
+            </Button>
+            <Button Grid.Row="3" Grid.Column="3" BorderThickness="0"
+                    x:Name="btnminus"  
+                    Margin="1.5" 
+                    Background="#FFF1F1F1" 
+                    Content="-"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="OperatoreClick">
+            </Button>
+            <Button Grid.Row="1" Grid.Column="1" BorderThickness="0"
+                    x:Name="btncanc"  
+                    Margin="1.5" 
+                    Background="#FFF1F1F1" 
+                    Content="C"
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="OperatoreClick">
+            </Button>
+            <Button Grid.Row="5" Grid.Column="2" BorderThickness="0"
+                    x:Name="btncomma"  
+                    Margin="1.5" 
+                    Background="#FFF1F1F1" 
+                    Content=","
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Click="btncomma_Click">
+            </Button>
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="4">Attenzione!<LineBreak/>La sottrazione con la virgola non è ancora stata implementata.</TextBlock>
+        </Grid>
+        <Label Grid.Row="0" Grid.Column="0" Name="LblDisplay" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="50"></Label>
+        
+    </Grid>
+</Window>
